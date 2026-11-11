@@ -1,6 +1,6 @@
 # LycheeYummyAlgorithmNotes
 
-This repository gathers my Markdown notes on algorithm practice — started in my freshman year, and built to grow alongside the algorithm courses ahead: 计概A so far, with 数算A and 程设实习 to come, plus problems from POJ, BNUOJ, LeetCode, 洛谷, Codeforces, and beyond. I hope these notes may offer a little help to anyone who happens to find their way here.
+This repository gathers my Markdown notes on algorithm practice — started in my freshman year, and built to grow alongside the algorithm courses ahead: 计概A so far, with 程设实习 and 数算A to come, plus problems from POJ, BNUOJ, LeetCode, 洛谷, Codeforces, and beyond. I hope these notes may offer a little help to anyone who happens to find their way here.
 
 The notes are organized with the following priority in mind:
 
