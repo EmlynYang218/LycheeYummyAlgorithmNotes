@@ -1,0 +1,20 @@
+# 编译产物
+*.o
+*.obj
+*.exe
+*.out
+*.class
+*.pyc
+__pycache__/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# 输入输出临时文件
+*.in
+*.out
+
+LEARNING——grokking_algorithms/

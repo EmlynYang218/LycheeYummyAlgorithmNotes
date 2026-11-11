@@ -1,0 +1,34 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int n;
+    cin >> n;
+    vector<long long> h(n);
+    for (int i = 0; i < n; i++) cin >> h[i];
+
+    //单调栈
+    vector<int> st;   // 存右边界不确定的柱子的下标，高度递增
+    long long ans = 0;
+
+    for (int i = 0; i <= n; i++) {
+        long long cur = (i == n) ? 0 : h[i];
+
+        //新来的比栈顶矮，栈顶的有边界找到
+        while (!st.empty() && h[st.back()] > cur) {
+            long long height = h[st.back()];
+            st.pop_back();
+            int left  = st.empty() ? 0 : st.back() + 1;
+            int right = i - 1;
+            ans = max(ans, height * (right - left + 1));
+        }
+
+        st.push_back(i);
+    }
+
+    cout << ans << '\n';
+    return 0;
+}
